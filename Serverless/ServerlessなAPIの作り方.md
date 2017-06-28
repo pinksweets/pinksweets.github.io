@@ -66,7 +66,7 @@ serverless config credentials --provider aws --key {aws_key} --secret {aws_secre
 ```
 
 ### 3.2.4. package.jsonのscriptに追加
-``` json : package.json
+```json : package.json
   "scripts": {
     "local": "node_modules\\.bin\\sls webpack serve",
     "deploy": "node_modules\\.bin\\sls deploy"
@@ -88,8 +88,9 @@ del handler.js serverless.yml
 ```bat
 mkdir build
 ```
+
 - webpack.config.js突っ込む
-``` javascript : webpack.config.js
+```javascript : webpack.config.js
 var path = require('path');
 var nodeExternals = require('webpack-node-externals');
 var glob = require('glob');
@@ -181,7 +182,7 @@ API用のコードを管理するためのフォルダ
 
 ## 3.3. とりあえずHelloを返そう
 ### 3.3.1. 「Hello AWS Lambda」を出力するコードを作る
-``` typescript : api\src\index.ts
+```typescript : api\src\index.ts
 export function hello(event, context, callback): void {
   callback(null, {
     statusCode: 200,
