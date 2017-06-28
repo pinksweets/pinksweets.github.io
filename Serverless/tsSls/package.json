@@ -1,0 +1,26 @@
+{
+  "name": "tsSls",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "local": "node_modules\\.bin\\sls webpack serve",
+    "deploy": "node_modules\\.bin\\sls deploy"
+  },
+  "dependencies": {
+    "aws-lambda": "^0.1.2",
+    "aws-sdk": "^2.77.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^0.0.14",
+    "@types/aws-sdk": "^2.7.0",
+    "@types/node": "^8.0.3",
+    "serverless": "^1.16.1",
+    "serverless-webpack": "^1.0.0-rc.4",
+    "ts-loader": "^2.2.0",
+    "tslint": "^5.4.3",
+    "typescript": "^2.3.4",
+    "webpack": "^3.0.0",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
