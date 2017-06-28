@@ -89,7 +89,6 @@ del handler.js serverless.yml
 mkdir build
 ```
 
-- webpack.config.js突っ込む
 ```javascript : webpack.config.js
 var path = require('path');
 var nodeExternals = require('webpack-node-externals');
