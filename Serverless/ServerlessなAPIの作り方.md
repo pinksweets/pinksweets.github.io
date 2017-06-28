@@ -84,10 +84,11 @@ del handler.js serverless.yml
 ```
 
 ### 3.2.6. webpack.config.jsの作成
-- buildフォルダ下に作る  
+- buildフォルダを作る  
 ```bat
 mkdir build
 ```
+- webpack.config.js突っ込む
 ``` javascript : webpack.config.js
 var path = require('path');
 var nodeExternals = require('webpack-node-externals');

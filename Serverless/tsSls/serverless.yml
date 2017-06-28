@@ -9,9 +9,24 @@ custom:
   webpack: ./build/webpack.config.js
   webpackIncludeModules: true
 functions:
-  hello:
-    handler: index.hello
+  info:
+    handler: index.info
     events:
     - http:
-        path: hello
+        path: info
         method: get
+        cors: true
+  detail:
+    handler: index.detail
+    events:
+    - http:
+        path: detail
+        method: get
+        cors: true
+  info_api:
+    handler: index.info_api
+    events:
+    - http:
+        path: info_api
+        method: get
+        cors: true
